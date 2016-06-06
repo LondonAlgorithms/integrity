@@ -1,12 +1,12 @@
 FROM node:latest
 
-RUN mkdir -p /usr/src/greedy
-WORKDIR /usr/src/greedy
+RUN mkdir -p /usr/src/pathfinding
+WORKDIR /usr/src/pathfinding
 
-ADD ./package.json /usr/src/greedy/package.json
+ADD ./package.json /usr/src/pathfinding/package.json
 
 RUN npm install
 
-RUN mkdir /usr/src/greedy/spec
-ADD spec.js /usr/src/greedy/spec/
-ADD mocha.opts /usr/src/greedy/
+RUN mkdir /usr/src/pathfinding/spec
+ADD spec.js /usr/src/pathfinding/spec/
+ADD mocha.opts /usr/src/pathfinding/
