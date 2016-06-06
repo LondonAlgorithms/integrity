@@ -1,0 +1,12 @@
+FROM node:latest
+
+RUN mkdir -p /usr/src/greedy
+WORKDIR /usr/src/greedy
+
+ADD ./package.json /usr/src/greedy/package.json
+
+RUN npm install
+
+RUN mkdir /usr/src/greedy/spec
+ADD spec.js /usr/src/greedy/spec/
+ADD mocha.opts /usr/src/greedy/

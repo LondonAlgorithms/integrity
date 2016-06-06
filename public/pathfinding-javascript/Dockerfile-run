@@ -1,0 +1,3 @@
+FROM pathfinding-javascript:latest
+
+ADD src/ /usr/src/greedy/src
