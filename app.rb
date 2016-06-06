@@ -1,13 +1,11 @@
-require 'docker-api'
 require 'fileutils'
 require 'sinatra'
-require 'pry'
-require 'haml'
 require 'json'
 
 set :bind, '0.0.0.0'
 
 get "/greedy-javascript" do
+  content_type :json
   files = Dir.
             entries("public/greedy-javascript/").
             reject { |x| [".","..", ".DS_Store"].include?(x) }.
@@ -18,6 +16,7 @@ end
 
 
 get "/pathfinding-javascript" do
+  content_type :json
   files = Dir.
             entries("public/pathfinding-javascript/").
             reject { |x| [".","..", ".DS_Store"].include?(x) }.
