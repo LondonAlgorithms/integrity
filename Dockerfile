@@ -9,3 +9,4 @@ ADD app.rb /usr/integrity
 ADD public/ /usr/integrity/public
 
 EXPOSE 4444
+CMD ["ruby", "app.rb", "-p", "4444"]
