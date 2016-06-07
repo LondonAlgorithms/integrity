@@ -15,7 +15,7 @@ describe('problem1', function(){
             ],
             0,0,
             3,4
-          ).to.eql(7)
+          )).to.eql(7)
     });
   });
 
@@ -33,7 +33,7 @@ describe('problem1', function(){
             ],
             0,0,
             3,4
-          ).to.eql(7)
+          )).to.eql(7)
     });
   });
 
@@ -56,7 +56,7 @@ describe('problem1', function(){
             ],
             4,4,
             9,9
-          ).to.eql(18)
+          )).to.eql(18)
     });
   });
 
