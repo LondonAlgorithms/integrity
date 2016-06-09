@@ -1,0 +1,5 @@
+FROM pathfinding-ruby:latest
+
+ADD algo.rb /usr/src/pathfinding/algo.rb
+
+RUN bundle exec rspec
