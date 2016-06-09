@@ -1,3 +1,4 @@
 FROM pathfinding-javascript:latest
 
 ADD src/ /usr/src/pathfinding/src
+RUN npm test
