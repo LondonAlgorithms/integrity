@@ -25,3 +25,12 @@ get "/pathfinding-javascript" do
   {files: files}.to_json
 end
 
+get "/pathfinding-ruby" do
+  content_type :json
+  files = Dir.
+            entries("public/pathfinding-ruby/").
+            reject { |x| [".","..", ".DS_Store"].include?(x) }.
+            collect { |q| "pathfinding-ruby/" + q }
+
+  {files: files}.to_json
+end

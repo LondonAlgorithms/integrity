@@ -1,5 +1,5 @@
 var algo = require("../src/algo");
-var problem1 = algo.romeoAndJuliet;
+var problem1 = algo.pathfinder;
 
 describe('problem1', function(){
   context('Test Case 1', function(){
